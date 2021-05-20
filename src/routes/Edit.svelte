@@ -230,7 +230,7 @@
 
 <div id="body">
   <div id="title-container">
-    <h1 id="app-title">Mermaid Live Editor</h1>
+    <h1 id="app-title">Mermaid XL Live Editor</h1>
   </div>
   <div id="sampleLoader">
     <div class="button-container">
