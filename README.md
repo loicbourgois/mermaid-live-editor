@@ -8,6 +8,23 @@ If you want to speed up the progress for mermaid-live-editor, join the slack cha
 
 Edit, preview and share mermaid charts/diagrams.
 
+## Quickstart
+
+```sh
+remote=git@github.com:loicbourgois/mermaid-live-editor.git
+local=$HOME//github.com/loicbourgois/mermaid-live-editor
+mkdir -p $local
+git clone $remote $local
+zshrc=$HOME/.zshrc
+cp $zshrc $zshrc.save
+cmd="mermaid(){ r=\$(python3 $local/cli.py \$*); echo \$r; }"
+echo $cmd >> $zshrc
+source $zshrc
+mermaid help
+mermaid init
+mermaid dev
+```
+
 ## Features
 
 - Edit and preview flowcharts, sequence diagrams, gantt diagrams in real time.
